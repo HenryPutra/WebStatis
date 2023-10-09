@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nilai-nilai Pendidikan Karakter</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            color: rgb(48, 46, 46);
+        }
+        p {
+            font-family: Arial, sans-serif;
+        }
+        ol {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 6px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            width: 60%;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
 <body>
-    <h2 style="text-align: center; color: rgb(48, 46, 46); font-family: Arial, Helvetica, sans-serif;">Nilai-nilai Pendidikan Karakter</h2>
-    <p style="font-family: Arial, sans-serif;">Ki Hajar Dewantara, bapak pendidikan Indonesia, merumuskan empat nilai utama pendidikan karakter dalam filosofi pendidikannya. Nilai-nilai tersebut adalah:</p>
-    <ol style="font-family: Arial, sans-serif;">
+    <!-- Tautan untuk Kembali -->
+    <a href="javascript:history.back()">Kembali ke Halaman Sebelumnya</a>
+
+    <!-- Heading -->
+    <h2>Nilai-nilai Pendidikan Karakter</h2>
+    <p>Ki Hajar Dewantara, bapak pendidikan Indonesia, merumuskan empat nilai utama pendidikan karakter dalam filosofi pendidikannya. Nilai-nilai tersebut adalah:</p>
+    <ol>
         <li>Olah hati (budi pekerti): Nilai ini menekankan pentingnya mengembangkan karakter moral yang kuat dan rasa empati terhadap orang lain.</li>
         <li>Olah pikir (literasi): Nilai ini menekankan pentingnya mengembangkan kemampuan berpikir kritis dan kecintaan untuk belajar.</li>
         <li>Olah karsa (estetika): Nilai ini menekankan pentingnya mengembangkan apresiasi terhadap seni dan budaya.</li>
         <li>Olah raga (kinestetik): Nilai ini menekankan pentingnya aktivitas fisik dan gaya hidup sehat.</li>
     </ol>
+
+    <!-- Tabel -->
+    <table>
+        <tr>
+            <th>Nilai Pendidikan Karakter</th>
+            <th>Deskripsi</th>
+        </tr>
+        <tr>
+            <td>Olah hati (budi pekerti)</td>
+            <td>Menekankan pentingnya mengembangkan karakter moral yang kuat dan rasa empati terhadap orang lain.</td>
+        </tr>
+        <tr>
+            <td>Olah pikir (literasi)</td>
+            <td>Menekankan pentingnya mengembangkan kemampuan berpikir kritis dan kecintaan untuk belajar.</td>
+        </tr>
+        <tr>
+            <td>Olah karsa (estetika)</td>
+            <td>Menekankan pentingnya mengembangkan apresiasi terhadap seni dan budaya.</td>
+        </tr>
+        <tr>
+            <td>Olah raga (kinestetik)</td>
+            <td>Menekankan pentingnya aktivitas fisik dan gaya hidup sehat.</td>
+        </tr>
+        <!-- Materi tambahan -->
+        <tr>
+            <td>Pendidikan karakter dalam keluarga</td>
+            <td>Peran keluarga dalam membentuk karakter anak-anak dan nilai-nilai moral.</td>
+        </tr>
+        <tr>
+            <td>Etika dalam dunia kerja</td>
+            <td>Pentingnya etika dalam lingkungan kerja dan profesionalisme.</td>
+        </tr>
+    </table>
+
+    <!-- Formulir -->
+    <form action="proses_formulir.php" method="POST">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="nilai_karakter">Nilai Pendidikan Karakter:</label>
+        <select id="nilai_karakter" name="nilai_karakter">
+            <option value="olah_hati">Olah Hati (Budi Pekerti)</option>
+            <option value="olah_pikir">Olah Pikir (Literasi)</option>
+            <option value="olah_karsa">Olah Karsa (Estetika)</option>
+            <option value="olah_raga">Olah Raga (Kinestetik)</option>
+        </select>
+
+        <label for="komentar">Komentar:</label>
+        <textarea id="komentar" name="komentar" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
