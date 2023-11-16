@@ -1,35 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Inspirasi Pendidikan dari Ki Hadjar Dewantara</title>
+
+    <!-- Add custom font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.5;
+            background: #f5f5f5;
+            background-image: linear-gradient(#e0f2fe, #bae6fd);
         }
+
         h1 {
+            font-size: 36px;
             text-align: center;
-            color: rgb(48, 46, 46);
+            color: #064663;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
+
         img {
             display: block;
-            margin: 0 auto;
+            max-width: 400px;
+            margin: 20px auto;
+            border-radius: 5px;
         }
+
+        a:hover {
+            color: #e0f2fe;
+        }
+
         p {
-            text-align: justify;
+            font-size: 18px;
+            color: #205295;
         }
+
         strong {
-            color: rgb(24, 155, 155);
+            color: #064663;
         }
+
         .center {
             text-align: center;
         }
+
         a {
             text-decoration: none;
-            color: blue;
+            color: #bae6fd;
+        }
+
+        /* Overlay Loader */
+        #overlay {
+            background: rgba(186, 230, 253, 0.8);
+        }
+
+        .loader {
+            border: 5px solid #064663;
         }
     </style>
 </head>
+
 <body>
     <!-- HTML Heading -->
     <h1>Inspirasi Pendidikan dari Ki Hadjar Dewantara</h1>
@@ -38,26 +72,43 @@
     <img src="education.jpg" alt="Gambar Pendidikan" width="300">
 
     <!-- HTML Paragraph -->
-    <p>Ki Hadjar Dewantara dikenal sebagai bapak pendidikan Indonesia, 
-    dan gagasannya tentang pendidikan terus menginspirasi para pendidik saat ini.
-    Salah satu konsep utamanya adalah "kemerdekaan dalam belajar", 
-    yang menekankan pentingnya mengembangkan bakat dan minat siswa daripada memaksa 
-    mereka untuk menyesuaikan diri dengan kurikulum yang ditetapkan.</p>
+    <p>Ki Hadjar Dewantara dikenal sebagai bapak pendidikan Indonesia,
+        dan gagasannya tentang pendidikan terus menginspirasi para pendidik saat ini.
+        Salah satu konsep utamanya adalah "kemerdekaan dalam belajar",
+        yang menekankan pentingnya mengembangkan bakat dan minat siswa daripada memaksa
+        mereka untuk menyesuaikan diri dengan kurikulum yang ditetapkan.</p>
 
     <!-- HTML Paragraph tentang relevansi dengan pendidikan modern -->
-    <p>Gagasan-gagasan Ki Hadjar Dewantara tentang pendidikan masih sangat relevan dalam konteks pendidikan modern. 
-    Konsep "kemerdekaan dalam belajar" mengingatkan kita untuk memberikan siswa kebebasan untuk mengejar minat dan bakat mereka 
-    serta mengembangkan kreativitas mereka dalam proses belajar.</p>
+    <p>Gagasan-gagasan Ki Hadjar Dewantara tentang pendidikan masih sangat relevan dalam konteks pendidikan modern.
+        Konsep "kemerdekaan dalam belajar" mengingatkan kita untuk memberikan siswa kebebasan untuk mengejar minat dan
+        bakat mereka
+        serta mengembangkan kreativitas mereka dalam proses belajar.</p>
 
     <!-- HTML Paragraph tentang sumber daya pendidikan -->
-    <p>Situs web ini akan mengeksplorasi ide-ide Ki Hadjar Dewantara tentang pendidikan dan relevansinya dengan pendidikan modern. 
-    Situs ini juga akan menampilkan artikel dan sumber daya bagi para pendidik yang ingin memasukkan gagasan-gagasan Ki Hadjar Dewantara ke dalam praktik pengajaran mereka.</p>
+    <p>Situs web ini akan mengeksplorasi ide-ide Ki Hadjar Dewantara tentang pendidikan dan relevansinya dengan
+        pendidikan modern.
+        Situs ini juga akan menampilkan artikel dan sumber daya bagi para pendidik yang ingin memasukkan gagasan-gagasan
+        Ki Hadjar Dewantara ke dalam praktik pengajaran mereka.</p>
 
     <!-- HTML Quote -->
     <p class="center"><strong>"Belajar, menjelajah, dan berkembang."</strong></p>
 
     <!-- HTML Links -->
     <p class="center">Halaman Selanjutnya: <a href="Nextpage.html">1</a></p>
-</body>
-</html>
 
+    <div id="overlay">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Rest of content -->
+
+    <script>
+        // Remove overlay after 2 seconds
+        setTimeout(function () {
+            document.getElementById("overlay").style.display = "none";
+        }, 2000); 
+    </script>
+
+</body>
+
+</html>

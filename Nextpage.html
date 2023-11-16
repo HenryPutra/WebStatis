@@ -1,118 +1,178 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Nilai-nilai Pendidikan Karakter</title>
     <style>
+        /* Global styles */
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            background-image: linear-gradient(#fbc7d4, #9796f0)
         }
-        h2 {
-            text-align: center;
-            color: rgb(48, 46, 46);
+
+        a {
+            color: #333;
         }
-        p {
-            font-family: Arial, sans-serif;
+
+        a:hover {
+            text-decoration: underline;
+            color: #fbc7d4;
         }
-        ol {
-            font-family: Arial, sans-serif;
-        }
-        table {
-            width: 60%;
+
+        /* Layout */
+        .container {
+            max-width: 800px;
             margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading */
+        h2 {
+            font-size: 32px;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            margin-top: 30px;
             border-collapse: collapse;
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 6px;
-            text-align: left;
-        }
+
+        td,
         th {
-            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background: #9796f0;
+            color: #fff;
         }
+
+        /* Form */
         form {
-            width: 60%;
-            margin: 0 auto;
+            max-width: 600px;
+            margin: 30px auto 0;
+            padding: 20px;
+            background: #fbc7d4;
+            border-radius: 3px;
         }
+
         label {
             display: block;
-            margin-bottom: 6px;
+            margin-bottom: 5px;
+            color: #333;
         }
-        input[type="text"], textarea, select {
+
+        input,
+        textarea,
+        select {
             width: 100%;
             padding: 8px;
-            margin-bottom: 10px;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+            background: #fff;
+            color: #333;
         }
+
         input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
+            width: auto;
+            background: #0077cc;
+            color: #fff;
             border: none;
             cursor: pointer;
         }
+
+        input[type="submit"]:hover {
+            background: #005299;
+        }
     </style>
 </head>
+
 <body>
-    <!-- Tautan untuk Kembali -->
-    <a href="javascript:history.back()">Kembali ke Halaman Sebelumnya</a>
+    <div class="container">
 
-    <!-- Heading -->
-    <h2>Nilai-nilai Pendidikan Karakter</h2>
-    <p>Ki Hajar Dewantara, bapak pendidikan Indonesia, merumuskan empat nilai utama pendidikan karakter dalam filosofi pendidikannya. Nilai-nilai tersebut adalah:</p>
-    <ol>
-        <li>Olah hati (budi pekerti): Nilai ini menekankan pentingnya mengembangkan karakter moral yang kuat dan rasa empati terhadap orang lain.</li>
-        <li>Olah pikir (literasi): Nilai ini menekankan pentingnya mengembangkan kemampuan berpikir kritis dan kecintaan untuk belajar.</li>
-        <li>Olah karsa (estetika): Nilai ini menekankan pentingnya mengembangkan apresiasi terhadap seni dan budaya.</li>
-        <li>Olah raga (kinestetik): Nilai ini menekankan pentingnya aktivitas fisik dan gaya hidup sehat.</li>
-    </ol>
+        <!-- Back link -->
+        <a href="javascript:history.back()">&laquo; Kembali</a>
 
-    <!-- Tabel -->
-    <table>
-        <tr>
-            <th>Nilai Pendidikan Karakter</th>
-            <th>Deskripsi</th>
-            <th>Materi Tambahan</th>
-        </tr>
-        <tr>
-            <td>Olah hati (budi pekerti)</td>
-            <td>Menekankan pentingnya mengembangkan karakter moral yang kuat dan rasa empati terhadap orang lain.</td>
-            <td rowspan="2">Pendidikan Karakter dalam Keluarga</td>
-        </tr>
-        <tr>
-            <td>Olah pikir (literasi)</td>
-            <td>Menekankan pentingnya mengembangkan kemampuan berpikir kritis dan kecintaan untuk belajar.</td>
-        </tr>
-        <tr>
-            <td>Olah karsa (estetika)</td>
-            <td>Menekankan pentingnya mengembangkan apresiasi terhadap seni dan budaya.</td>
-            <td rowspan="2">Etika dalam Dunia Kerja</td>
-        </tr>
-        <tr>
-            <td>Olah raga (kinestetik)</td>
-            <td>Menekankan pentingnya aktivitas fisik dan gaya hidup sehat.</td>
-        </tr>
-    </table>
+        <!-- Heading -->
+        <h2>Nilai-nilai Pendidikan Karakter</h2>
+        <p>Ki Hajar Dewantara, bapak pendidikan Indonesia, merumuskan empat nilai utama pendidikan karakter dalam
+            filosofi
+            pendidikannya. Nilai-nilai tersebut adalah:</p>
+        <ol>
+            <li>Olah hati (budi pekerti): Nilai ini menekankan pentingnya mengembangkan karakter moral yang kuat dan
+                rasa
+                empati terhadap orang lain.</li>
+            <li>Olah pikir (literasi): Nilai ini menekankan pentingnya mengembangkan kemampuan berpikir kritis dan
+                kecintaan
+                untuk belajar.</li>
+            <li>Olah karsa (estetika): Nilai ini menekankan pentingnya mengembangkan apresiasi terhadap seni dan budaya.
+            </li>
+            <li>Olah raga (kinestetik): Nilai ini menekankan pentingnya aktivitas fisik dan gaya hidup sehat.</li>
+        </ol>
 
-    <!-- Formulir -->
-    <form action="proses_formulir.php" method="POST">
-        <label for="nama">Nama:</label>
-        <input type="text" id="nama" name="nama" required>
+        <!-- Tabel -->
+        <table>
+            <tr>
+                <th>Nilai Pendidikan Karakter</th>
+                <th>Deskripsi</th>
+                <th>Materi Tambahan</th>
+            </tr>
+            <tr>
+                <td>Olah hati (budi pekerti)</td>
+                <td>Menekankan pentingnya mengembangkan karakter moral yang kuat dan rasa empati terhadap orang lain.
+                </td>
+                <td rowspan="2">Pendidikan Karakter dalam Keluarga</td>
+            </tr>
+            <tr>
+                <td>Olah pikir (literasi)</td>
+                <td>Menekankan pentingnya mengembangkan kemampuan berpikir kritis dan kecintaan untuk belajar.</td>
+            </tr>
+            <tr>
+                <td>Olah karsa (estetika)</td>
+                <td>Menekankan pentingnya mengembangkan apresiasi terhadap seni dan budaya.</td>
+                <td rowspan="2">Etika dalam Dunia Kerja</td>
+            </tr>
+            <tr>
+                <td>Olah raga (kinestetik)</td>
+                <td>Menekankan pentingnya aktivitas fisik dan gaya hidup sehat.</td>
+            </tr>
+        </table>
 
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" required>
+        <!-- Formulir -->
+        <form action="proses_formulir.php" method="POST">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
 
-        <label for="nilai_karakter">Nilai Pendidikan Karakter:</label>
-        <select id="nilai_karakter" name="nilai_karakter">
-            <option value="olah_hati">Olah Hati (Budi Pekerti)</option>
-            <option value="olah_pikir">Olah Pikir (Literasi)</option>
-            <option value="olah_karsa">Olah Karsa (Estetika)</option>
-            <option value="olah_raga">Olah Raga (Kinestetik)</option>
-        </select>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
 
-        <label for="komentar">Komentar:</label>
-        <textarea id="komentar" name="komentar" rows="4" required></textarea>
+            <label for="nilai_karakter">Nilai Pendidikan Karakter:</label>
+            <select id="nilai_karakter" name="nilai_karakter">
+                <option value="olah_hati">Olah Hati (Budi Pekerti)</option>
+                <option value="olah_pikir">Olah Pikir (Literasi)</option>
+                <option value="olah_karsa">Olah Karsa (Estetika)</option>
+                <option value="olah_raga">Olah Raga (Kinestetik)</option>
+            </select>
 
-        <input type="submit" value="Submit">
-    </form>
+            <label for="komentar">Komentar:</label>
+            <textarea id="komentar" name="komentar" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Smooth scroll to top -->
+    <script src="smooth-scroll.min.js"></script>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
+
 </html>
